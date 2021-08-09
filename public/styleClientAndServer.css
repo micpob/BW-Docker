@@ -1,0 +1,168 @@
+@font-face {
+  font-family: waiting;
+  src: url(Waiting.ttf);
+}
+
+@font-face {
+   font-family: merthy;
+   src: url(Merthy.ttf);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+body {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden; 
+  background-color: black;   
+}    
+
+#background, #background2 {  
+  position: absolute;  
+  height: 100%;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);  
+  background: black no-repeat center center fixed;  
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0;    
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;  
+  -o-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out; 
+}
+
+#main_container {
+  opacity: 0;  
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;  
+}
+
+.well {
+  max-height: 80vh;
+  max-width: 70vw;
+  background-color: rgba(000, 000, 000, 0.5);
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  overflow:hidden;     
+}
+
+#quotes {
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+#quote {
+  font-family: 'Waiting';  
+}
+
+#author {
+  font-family: 'Merthy', serif;
+  font-size: 3.5em;
+  color: yellow;
+  text-align: right;   
+}
+
+
+ @media only screen and  (orientation: portrait) {
+  .well {
+    max-width: 85vw;
+  }
+ }
+
+ @media (min-width: 1500px) { 
+  h1 { 
+    font-size: 3em;            
+  }
+
+  #author {
+    font-size: 3.3em;                       
+  }        
+}
+
+ @media (min-width: 2000px) { 
+  h1 { 
+    font-size: 3.3em;            
+  }
+
+  #author {
+    font-size: 3.6em;                       
+  }        
+}
+
+@media (max-height: 500px) { 
+  #quote { 
+    font-size: 2.2em;            
+  }
+
+  #author {
+    font-size: 2.5em;                       
+  }        
+}
+
+@media (max-height: 450px) { 
+  #quote { 
+    font-size: 2em;            
+  }
+
+  #author {
+    font-size: 2.3em;                       
+  }        
+}
+
+@media (max-height: 400px) { 
+  #quote { 
+    font-size: 1.8em;            
+  }
+
+  #author {
+    font-size: 2.2em;                       
+  }
+
+  .btn {
+    padding:4px 8px;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  li {
+    font-size: 16px;
+    padding: 10px;
+  }        
+}
+
+@media (max-height: 300px) { 
+  #quote { 
+    font-size: 1.7em;            
+  }
+
+  #author {
+    font-size: 2em;                       
+  }
+
+  .btn {
+    padding:4px 8px;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  li {
+    font-size: 16px;
+    padding: 10px;
+  }        
+}

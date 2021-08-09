@@ -1,0 +1,91 @@
+#opening_message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'merthy', serif;
+  font-size: 6em;    
+  -webkit-transition: opacity 3s linear 500ms;
+  -moz-transition: opacity 3s linear 500ms; 
+  -o-transition: opacity 3s linear 500ms;
+  transition: opacity 3s linear 500ms;
+  opacity: 0;
+  color: whitesmoke; 
+}
+
+#buttons_container {
+  text-align: center;
+}
+
+#inspireButton, #inspireButton:visited {
+  background-color: #337ab7;
+  font-weight: 600;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+#inspireButton[disabled] {
+  cursor: default;
+  pointer-events: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;    
+}
+
+li {
+  display: inline-block;
+  font-size: 2em;
+  padding: 5px;
+}
+
+a {
+  color: #337ab7;
+  opacity: 0.6;
+}
+
+a:visited {
+  color: #337ab7;
+  opacity: 0.6;
+ }
+
+a:hover {
+  opacity: 1; 
+ }
+
+.twitter:hover {
+  color: #00aced;
+}
+
+.facebook:hover {
+  color: #ffffff;
+}
+
+.save-to-disk:hover {
+  color: #efda1a;
+}
+
+a:active {
+  color: #337ab7;
+  opacity: 0.6;
+}
+ 
+html.can-touch a:hover{ 
+  color: #337ab7;
+  opacity: 0.6;
+}
+
+html.can-touch button:hover{ 
+  background-color: #337ab7;  
+}
+
+li.disable-links {
+  cursor: default;
+  pointer-events: none;
+}
